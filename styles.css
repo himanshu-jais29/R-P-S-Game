@@ -1,0 +1,205 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Body Background and Layout */
+  body {
+    background: linear-gradient(135deg, #099b18, #b2db1d);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container Styling */
+  .container {
+    background-color: white;
+    padding: 30px;
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  #heading{
+    height: 80px;
+    width: 100%;
+    background-color: #dfad0cd8;
+    
+  }
+  h1 {
+    color: #e1280f;
+    opacity: 80%;
+    text-align: center;
+    padding-top: 15px;
+
+    
+  }
+  
+  /* Scoreboard */
+  .scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  .score-box {
+    background-color: #dfe6e9;
+    padding: 15px;
+    border-radius: 15px;
+    width: 45%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .score-box p {
+    color: #636e72;
+    margin-bottom: 5px;
+  }
+  
+  .score-box span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2d3436;
+  }
+  
+  /* Buttons for Choices */
+  .choices {
+    margin: 20px 0;
+  }
+  
+  .choice {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 120px;
+    background-color: #3a8bdb;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .choice:hover {
+    background-color: #df1321;
+    transform: scale(1.05);
+  }
+  
+  /* Results Section */
+  .results p, .results h2 {
+    margin: 10px 0;
+    color: #2d3436;
+    font-size: 30px;
+  }
+  
+  .results h2 {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #0984e3;
+  }
+  
+ /* Overlay Styling */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .overlay-content {
+    text-align: center;
+    background-color: #0984e3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .overlay-content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+  
+  .overlay-content .button {
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .overlay-content .button:hover {
+    background-color: #019474;
+  }
+  /* Rules Button in the Corner */
+.rules-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .rules-btn:hover {
+    background-color: #019474;
+  }
+  
+  
+  
+  
+  /* Modal Styling */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: rgb(239, 206, 217);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .close {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #636e72;
+  }
+  
+  .close:hover {
+    color: #d63031;
+  }
+  

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="scoreboard">
+      <div class="score-box">
+        <p>Player Score</p>
+        <span id="player-score">0</span>
+      </div>
+      <div class="score-box">
+        <p>Computer Score</p>
+        <span id="computer-score">0</span>
+      </div>
+    </div>
+
+    <div class="choices">
+      <button class="choice" data-choice="stone">✊Rock</button>
+      <button class="choice" data-choice="paper">🖐️ Paper</button>
+      <button class="choice" data-choice="scissors">✌️ Scissors</button>
+    </div>
+
+    <div class="results">
+      <p id="player-choice">Player Choice: -</p>
+      <p id="computer-choice">Computer Choice: -</p>
+      <h2 id="result">Result: -</h2>
+    </div>
+
+    <button id="reset" class="button">Reset Scores</button>
+    <button id="rules-button" class="rules-btn">?</button>
+
+    <!-- Modal for Game Rules -->
+    <div id="rules-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Game Rules</h2>
+        <p>✊Rock crushes ✌️ Scissors.</p>
+        <p>🖐️ Paper covers ✊Rock.</p>
+        <p>✌️ Scissors cuts 🖐️ Paper.</p>
+        <p>If both choices are the same, it's a draw!</p>
+      </div>
+    </div>
+
+    <!-- Overlay Message -->
+    <div id="overlay-message" class="overlay">
+      <div class="overlay-content">
+        <h2 id="overlay-text"></h2>
+        <button id="action-button" class="button"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
